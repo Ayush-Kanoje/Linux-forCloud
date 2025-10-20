@@ -1,0 +1,5 @@
+pwd- stand for PRESENT CURRENT DIRECTORY, it help us to know about in which directory we currenlt worrking at
+cd -  is use to enter and exit from a directory
+ls - is use to get entire list of files and directory/folder present in pwd
+echo - is used to write and create a new file, but to write in existing file without deleting existing content we need to use >> "file name" and to create a new file > "file name"
+
