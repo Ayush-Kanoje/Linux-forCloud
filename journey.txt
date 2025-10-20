@@ -1,2 +1,22 @@
-Date- 18/10/2025, Konachiwa!! first day todays goal linux basic command.
+Ayush Kanoje – Linux Journey for Cloud Computing
+
+Start Date: 20th October 2025
+
+This marks the beginning of my Linux journey with a clear goal: mastering Linux to become proficient in Cloud Computing and Cloud Security.
+Linux is the foundation of most cloud platforms, and understanding it deeply will empower me to deploy, manage, and secure cloud environments
+effectively.
+
+Goals for this journey:
+- Master Linux commands, file systems, permissions, and process management.
+- Learn shell scripting and automation for cloud tasks.
+- Understand server setup, networking, and virtualization.
+- Gain practical skills to work with cloud platforms like AWS, Azure, and GCP.
+- Prepare for cloud security challenges and best practices.
+
+Every command I execute, every server I configure, and every script I write brings me closer to my goal: becoming a skilled Cloud Engineer with strong Linux expertise.  
+This file will document my progress, lessons learned, and milestones achieved along the way.
+
+“Linux is the gateway to the cloud. Master it, and the cloud becomes yours.”  
+
+– Ayush Kanoje
 
