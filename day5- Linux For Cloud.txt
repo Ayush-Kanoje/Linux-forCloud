@@ -1,0 +1,43 @@
+📌𝗗𝗮𝘆 𝟱 𝗼𝗳 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗟𝗶𝗻𝘂𝘅 𝗳𝗼𝗿 𝗖𝗹𝗼𝘂𝗱 — 𝗚𝗲𝘁𝘁𝗶𝗻𝗴 𝗖𝗼𝗺𝗳𝗼𝗿𝘁𝗮𝗯𝗹𝗲 𝗪𝗶𝘁𝗵 𝗙𝗶𝗹𝗲 𝗢𝗽𝗲𝗿𝗮𝘁𝗶𝗼𝗻𝘀.
+Today’s session focused on how Linux manages files at the core. These commands may look basic, but they’re the ones you rely on constantly when working on servers, fixing issues, or organising environments.
+𝟏. 𝐜𝐩 — 𝐌𝐚𝐤𝐢𝐧𝐠 𝐂𝐨𝐩𝐢𝐞𝐬 𝐭𝐡𝐞 𝐒𝐦𝐚𝐫𝐭 𝐖𝐚𝐲
+I learned how Linux duplicates files without any noise. It’s straightforward, but essential when experimenting or backing up configs.
+🔹To Copy Files:
+   • Example: cp file.txt backup.txt
+🔹To Copy Folder: We need to include the -r (means recursively) flag
+   • Example: cp -r folder1 folder2/
+𝟐. 𝐦𝐯 — 𝐌𝐨𝐯𝐢𝐧𝐠 𝐨𝐫 𝐑𝐞𝐧𝐚𝐦𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 𝐈𝐧𝐭𝐞𝐧𝐭𝐢𝐨𝐧
+ i.This command helped me move files or folders from one location to another. (-r flag does not exist for the mv command)
+🔹To move a folder: we first mention the folder we want to move, and second, we mention the location to move it. (Space between folder name is compulsory)
+   •Example: mv folder1/ folder2/
+ ii. The mv command can also be used to rename both folders and files.
+🔹To rename folder:
+   • mv folder/ renameFolder
+🔹To rename file:
+   • mv file.txt renameFile.txt
+𝟑. 𝐫𝐦 — 𝐃𝐞𝐥𝐞𝐭𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐢𝐛𝐢𝐥𝐢𝐭𝐲
+rm looks harmless, but this is the command that teaches you discipline fast. There’s no “trash bin” in Linux — if you remove something, it’s gone for
+good. Understanding this command made me more intentional with every action.
+🔹To remove a file:
+   • rm file.txt
+🔹To remove a folder: Folders require recursive deletion; otherwise, Linux won’t touch them.
+   • rm -r folderName/
+🔹To force remove without prompts: (Use only when you’re 100% sure)
+   • rm -rf folderName/
+𝟒. 𝐡𝐞𝐚𝐝 — 𝐑𝐞𝐚𝐝𝐢𝐧𝐠 𝐭𝐡𝐞 𝐁𝐞𝐠𝐢𝐧𝐧𝐢𝐧𝐠 𝐨𝐟 𝐚 𝐅𝐢𝐥𝐞
+Large files can be messy. head, let me preview the first few lines quickly without opening the entire thing. It’s perfect when you want initial context — configs, logs, CSV headers, etc.
+🔹To view first 10 lines (default):
+   • head file.txt
+🔹To view a custom number of lines:
+   • head -n 20 file.txt
+𝟓. 𝐭𝐚𝐢𝐥 — 𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐖𝐡𝐚𝐭’𝐬 𝐇𝐚𝐩𝐩𝐞𝐧𝐢𝐧𝐠 𝐚𝐭 𝐭𝐡𝐞 𝐄𝐧𝐝
+If the head shows the beginning, the tail shows the latest activity at the bottom — especially useful for logs where the newest events are always recorded at the end.
+🔹Default last 10 lines:
+   • tail file.txt
+🔹Custom number of lines:
+   • tail -n 15 logfile.log
+𝟔. 𝐭𝐚𝐢𝐥 -𝐟 — 𝐖𝐚𝐭𝐜𝐡𝐢𝐧𝐠 𝐋𝐢𝐯𝐞 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐢𝐧 𝐑𝐞𝐚𝐥 𝐓𝐢𝐦𝐞
+This was the game-changer today.
+ tail -f literally streams updates as they happen. Whether a log changes, a process fails, or a service throws an error, you see it instantly.
+🔹To follow a file in real time:
+   • tail -f /var/log/syslog
