@@ -1,7 +1,8 @@
 𝐃𝐚𝐲 𝟏𝟏 𝐋𝐢𝐧𝐮𝐱 𝐅𝐨𝐫 𝐂𝐥𝐨𝐮𝐝 — 𝐯𝐢 & 𝐯𝐢𝐦
 Today I finally sat down with vi/vim, and I’ll be honest — I didn’t learn it because I “wanted” to.
 So I opened vim for the first time, stared at the screen, and realised:
-typing didn’t work. Nothing worked. And that’s when I understood why people fear it. Every tutorial, every server, every SSH session… they all assume you know Vim.
+typing didn’t work, Nothing worked. tutorial, every server, every SSH session… they all assume you know Vim.
+
 🔹𝗧𝗵𝗲 𝘀𝗲𝗰𝗿𝗲𝘁?
 Vim isn’t a “type everything directly” editor. It’s a 𝒎𝒐𝒅𝒆-𝒃𝒂𝒔𝒆𝒅 𝒆𝒅𝒊𝒕𝒐𝒓.
 If you don’t understand the modes, you’re dead.
@@ -23,6 +24,7 @@ Where you actually type like a normal human.
  • o → new line below
 Press 𝐄𝐬𝐜 to go back to Normal mode.
 If you don’t know which mode you’re in, hit Esc. Vim won’t break.
+
 🔹𝗦𝗮𝘃𝗲, 𝗘𝘅𝗶𝘁, 𝗤𝘂𝗶𝘁 —
 Here are the only exit commands that actually matter:
 • Save and Exit
@@ -34,9 +36,8 @@ Here are the only exit commands that actually matter:
 • Quit Normally (only if no changes were made)
     :q → works only when nothing changed
 If changes exist, Vim blocks it and forces you to decide
+
 🔹 𝗪𝗵𝗮𝘁 𝗜 𝗱𝗼𝗻’𝘁 𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗮𝗻𝗱 𝘆𝗲𝘁
-I’m not gonna pretend I mastered vim.
-Here’s what still looks like alien language:
  • Visual mode
  • Macros
  • Buffers and windows
@@ -44,6 +45,7 @@ Here’s what still looks like alien language:
  • Advanced movement (w, b, gg, G… feels like gaming)
  • Search & replace patterns
 These exist, and I know they’re powerful, but I’m not touching them until I need them.
+
 🔹 𝗪𝗵𝗮𝘁 𝗽𝗿𝗼𝗯𝗹𝗲𝗺 𝗜 𝘄𝗮𝘀 𝘁𝗿𝘆𝗶𝗻𝗴 𝘁𝗼 𝘀𝗼𝗹𝘃𝗲 𝘁𝗼𝗱𝗮𝘆
 I needed vim for something simple: editing config files directly from the terminal.
 When you’re learning Linux or cloud engineering, you’ll eventually hit things like:
